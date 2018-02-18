@@ -15,6 +15,7 @@ extern STRING *newSTRING(char *);
 extern char *getSTRING(STRING *);
 extern char *setSTRING(STRING *, char *);
 extern int compareSTRING(STRING *, STRING *);
+extern int rcompareSTRING(STRING *, STRING *);
 extern void displaySTRING(void *, FILE *);
 extern void freeSTRING(void *);
 

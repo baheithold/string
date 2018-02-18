@@ -38,6 +38,11 @@ int compareSTRING(STRING *str1, STRING *str2) {
     return strcmp(getSTRING(str1), getSTRING(str2));
 }
 
+int rcompareSTRING(STRING *str1, STRING *str2) {
+    assert(str1 != NULL && str2 != NULL);
+    return strcmp(getSTRING(str2), getSTRING(str1));
+}
+
 void displaySTRING(void *v, FILE *fp) {
     fprintf(fp, "%s", getSTRING((STRING *)v));
 }
